@@ -6,7 +6,7 @@ const stats = [
   { icon: <Users />, value: "1,100+", label: "Participants" },
   { icon: <Clock />, value: "48hrs", label: "Duration" },
   { icon: <Code />, value: "250+", label: "Projects" },
-  { icon: <Trophy />, value: "₹2L+", label: "Prize Pool" }
+  { icon: <Trophy />, value: "₹30K+", label: "Prize Pool" }
 ];
 
 export const PreviousAchievements = () => {
@@ -20,7 +20,7 @@ export const PreviousAchievements = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-6 pixel-font">Previous Edition</h2>
+          <h2 className="text-4xl font-bold text-white mb-6 pixel-font">Past Events</h2>
           <p className="text-cyan-100 text-lg">
             Our largest event to date, bringing together over 1,100 participants to create innovative tech solutions. 
             This hackathon showcased the incredible talent and creativity within our community.

@@ -1,24 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Brain, Smartphone, Globe } from 'lucide-react';
+import { Code2, Brain, Smartphone, Globe, Cpu } from 'lucide-react';
 
 const tracks = [
   {
     icon: <Brain className="w-12 h-12" />,
-    title: 'AI/ML',
-    description: 'Develop cutting-edge AI solutions and ML models'
+    title: 'TBD',
+    description: 'To be determined'
   },
-  {
-    icon: <Globe className="w-12 h-12" />,
-    title: 'Web and Mobile Development',
-    description: 'Create innovative web applications and services'
-  },
-  
-  {
-    icon: <Code2 className="w-12 h-12" />,
-    title: 'Open Innovation',
-    description: 'Push boundaries with creative tech solutions'
-  }
+  // {
+  //   icon: <Globe className="w-12 h-12" />,
+  //   title: 'TBD',
+  //   description: 'To be determined'
+  // },
+  // {
+  //   icon: <Cpu className="w-12 h-12" />,
+  //   title: 'TBD',
+  //   description: 'To be determined'
+  // },
+  // {
+  //   icon: <Code2 className="w-12 h-12" />,
+  //   title: 'TBD',
+  //   description: 'To be determined'
+  // }
 ];
 
 export const Tracks = () => {
@@ -33,7 +37,7 @@ export const Tracks = () => {
           Hackathon Tracks
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 justify-center max-w-md mx-auto">
           {tracks.map((track, index) => (
             <motion.div
               key={track.title}

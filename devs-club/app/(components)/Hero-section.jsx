@@ -105,11 +105,12 @@ export const HeroSection = () => {
             className="flex flex-col md:flex-row items-center justify-center gap-6 px-4"
           >
             <Link 
-              href="/achievements" 
+              href="https://devclubblogs.vercel.app/"
+              target="_blank"
               className="group relative inline-flex items-center bg-blue-600 text-white px-4 py-4 rounded-full overflow-hidden transition-all duration-300 ease-out hover:bg-blue-700 w-full md:w-auto justify-center"
             >
               <span className="relative z-10 font-medium text-base px-2">
-                Explore Our Achievements
+                Explore Our Blogs
               </span>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-300 ease-out group-hover:w-full"></span>
             </Link>

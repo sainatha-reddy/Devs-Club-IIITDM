@@ -5,8 +5,9 @@ import { Menu, X } from "lucide-react";
 const links = [
   { id: "About", label: "About" },
   { id: "Tracks", label: "Tracks" },
-  { id: "Timeline", label: "Timeline" },
-  { id: "Rules", label: "Rules" },
+  { id: "Gallery", label: "Gallery" },
+  // { id: "Timeline", label: "Timeline" },
+  // { id: "Rules", label: "Rules" },
 ];
 
 export const Navigation = () => {
@@ -28,8 +29,8 @@ export const Navigation = () => {
         {links.map((link) => (
           <a
             key={link.id}
-            href={`#${link.label}`}
-            className="text-cyan-100 hover:text-cyan-400"
+            href={`#${link.id}`}
+            className="text-cyan-100 hover:text-cyan-400 transition-colors"
           >
             {link.label}
           </a>

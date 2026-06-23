@@ -23,9 +23,6 @@ const resources = [
       { name: 'Udemy', link: 'https://www.udemy.com/course/google-cloud-certification-associate-cloud-engineer/', icon: Link },
       { name:'Youtube',link: 'https://www.youtube.com/watch?v=kzKFuHk8ovk&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL',icon: Link },
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/X3C8EZQn', icon: Link },
-    ],
   },
   {
     name: 'Cyber Security',
@@ -40,9 +37,7 @@ const resources = [
       { name: 'Coursera', link: 'https://www.coursera.org/professional-certificates/google-cybersecurity', icon: Linkedin },
       { name:'Youtube',link: 'https://www.youtube.com/watch?v=lpa8uy4DyMo&list=PL9ooVrP1hQOGPQVeapGsJCktzIO4DtI4_',icon: Link },
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/mgVQmrR2', icon: Link },
-    ],
+    
   },
   {
     name: 'Data Science',
@@ -59,9 +54,7 @@ const resources = [
 
     ]
     ,
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/NdJuW8yb', icon: Link },
-    ],
+    
   },
   {
     name: 'AI ML',
@@ -79,9 +72,7 @@ const resources = [
       { name:'Youtube-ML',link: 'https://www.youtube.com/watch?v=i_LwzRVP7bg&list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s',icon: Link },
 
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/3Ns6GSBw', icon: Link },
-    ],
+    
   },
   {
     name: 'App Dev (Kotlin)',
@@ -99,9 +90,7 @@ const resources = [
       { name:'Youtube',link: 'https://www.youtube.com/watch?v=EExSSotojVI&list=PLBewgZ0s8b7-b6Ux5xrrozYMl4qiulQlL',icon: Link },
 
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/hJPAK6Et', icon: Link },
-    ],
+    
   },
   {
     name: 'App Dev (React Native)',
@@ -118,9 +107,7 @@ const resources = [
       { name:'Youtube',link: 'https://www.youtube.com/watch?v=0-S5a0eXPoc&t=6s',icon: Link },
 
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/XF6rbUtS', icon: Link },
-    ],
+    
   },
   {
     name: 'App Dev (Flutter)',
@@ -139,9 +126,7 @@ const resources = [
       { name:'Youtube',link: 'https://www.youtube.com/watch?v=VPvVD8t02U8',icon: Link },
 
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/NKKKjRQF', icon: Link },
-    ],
+    
   },
   {
     name: 'Web Dev (MERN)',
@@ -156,9 +141,7 @@ const resources = [
       { name: 'MERN Stack Development-Udemy', link: 'https://www.udemy.com/course/mern-stack-front-to-back/', icon: Linkedin },
       { name:'Youtube',link: 'https://www.youtube.com/watch?v=mU6anWqZJcc&list=PLf7L7Kg8_FNzwwSK7c4Dei_h3oqg3dwYc',icon: Link },
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/u8amnfbh', icon: Link },
-    ],
+    
   },
   {
     name: 'Web Dev (Python)',
@@ -173,9 +156,7 @@ const resources = [
       { name: 'Python for Web Development - udemy', link: 'https://www.udemy.com/course/python-django-tutorial/', icon: Linkedin },
       { name:'Youtube',link: 'https://www.youtube.com/watch?v=yBDHkveJUf4',icon: Link },
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/YTcGyZfy', icon: Link },
-    ],
+    
   },
   {
     name: 'Amazon Cloud (AWS)',
@@ -190,9 +171,7 @@ const resources = [
       { name: 'AWS Cloud Practitioner Essentials', link: 'https://www.coursera.org/learn/aws-cloud-practitioner-essentials', icon: Linkedin },
       { name:'Youtube',link: 'https://www.youtube.com/watch?v=NhDYbskXRgc',icon: Link },
     ],
-    community: [
-      { name: 'Join Our Discord Channel', link: 'https://discord.gg/HGgMeWaD', icon: Link },
-    ],
+    
   },
 ]
 
@@ -255,9 +234,7 @@ export default function ResourcesSection() {
                 {selectedResource.courses && selectedResource.courses.length > 0 && (
                   <ResourceSection title="Courses" items={selectedResource?.courses} />
                 )}
-                {selectedResource.community && selectedResource.community.length > 0 && (
-                  <ResourceSection title="Community" items={selectedResource?.community} />
-                )}
+                
               </>
             )}
           </div>

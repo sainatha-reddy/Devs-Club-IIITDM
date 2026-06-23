@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Gamepad2, Sparkles } from "lucide-react";
+import { Gamepad2, Sparkles, BookMarked } from "lucide-react";
 import { useState } from "react";
 import { Navigation } from "./header/Navigation";
 import { GlowingButton } from "./header/GlowingButton";
@@ -36,7 +36,7 @@ export const Header = () => {
             whileHover={{ scale: 1.05 }}
             className="text-lg sm:text-xl font-bold text-white pixel-font"
           >
-            Vashisht Hackathon 2.0
+            Vashisht Hackathon 3.O
           </motion.div>
           <Navigation />
         </div>
@@ -68,8 +68,7 @@ export const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 pixel-font leading-tight"
             >
-              <span className="block sm:inline">Vashisht</span>{" "}
-              <span className="block sm:inline">Hackathon 2.0</span>
+              <span className="block sm:inline">Vashisht Hackathon 3.O</span>
             </motion.h1>
 
             <motion.div
@@ -92,9 +91,16 @@ export const Header = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
+            className="flex flex-col lg:flex-row gap-4 items-center justify-center"
           >
-            <Link href="https://unstop.com/hackathons/vashisht-hackathon-2o-samgathaxvashisht-indian-institute-of-information-technology-design-and-manufacturing-i-1393183" target="_blank" rel="noopener noreferrer">
-            <GlowingButton >Register Now</GlowingButton></Link>
+            <Link href="https://drive.google.com/file/d/1e5QsNJ8DOswy8XnIX6uYLutY_Hg1Q5n9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <GlowingButton>
+                View Brochure
+              </GlowingButton>
+            </Link>
+            <Link href="mailto:devclub@iiitdm.ac.in" target="_blank" rel="noopener noreferrer">
+              <GlowingButton transparent={true}>Sponsor Us</GlowingButton>
+            </Link>
           </motion.div>
         </motion.div>
 
