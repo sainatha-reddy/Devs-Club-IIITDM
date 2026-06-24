@@ -281,7 +281,7 @@ const EventsPage = () => {
       </motion.div>
 
       {
-      /*<motion.div
+      <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
@@ -320,11 +320,11 @@ const EventsPage = () => {
                 </Link>
               </motion.div>
               
-              // Background Decorations 
+              {/* //Background Decorations  */}
               <div className="absolute top-0 right-0 w-32 h-32 sm:w-64 sm:h-64 bg-white opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 sm:w-48 sm:h-48 bg-white opacity-5 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
             </div>
-          </motion.div> */}
+          </motion.div> }
 
       <Footer />
 
